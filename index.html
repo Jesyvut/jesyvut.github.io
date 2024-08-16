@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berenstain Bears Book List</title>
+  <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #2c2c2c;
+            color: #ffffff;
+            padding: 20px;
+        }
+        #searchBar {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            font-size: 18px;
+            border: 2px solid #555;
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .book-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .book-item input {
+            margin-right: 10px;
+        }
+        .book-item label {
+            font-size: 16px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Berenstain Bears Book List</h1>
+    <input type="text" id="searchBar" placeholder="Search for a book...">
+
+    <ul class="book-list" id="bookList">
+        <li class="book-item"><input type="checkbox" id="book1"> <label for="book1">The Berenstain Bears and the Spooky Old Tree</label></li>
+        <li class="book-item"><input type="checkbox" id="book2"> <label for="book2">The Berenstain Bears Go to School</label></li>
+        <li class="book-item"><input type="checkbox" id="book3"> <label for="book3">The Berenstain Bears' New Baby</label></li>
+        <li class="book-item"><input type="checkbox" id="book4"> <label for="book4">The Berenstain Bears and the Trouble with Friends</label></li>
+        <li class="book-item"><input type="checkbox" id="book5"> <label for="book5">The Berenstain Bears and Too Much Junk Food</label></li>
+        <li class="book-item"><input type="checkbox" id="book6"> <label for="book6">The Berenstain Bears and the Messy Room</label></li>
+        <li class="book-item"><input type="checkbox" id="book7"> <label for="book7">The Berenstain Bears and the Bad Habit</label></li>
+        <li class="book-item"><input type="checkbox" id="book8"> <label for="book8">The Berenstain Bears in the Dark</label></li>
+        <li class="book-item"><input type="checkbox" id="book9"> <label for="book9">The Berenstain Bears and the Trouble with Chores</label></li>
+        <li class="book-item"><input type="checkbox" id="book10"> <label for="book10">The Berenstain Bears and Too Much TV</label></li>
+        <li class="book-item"><input type="checkbox" id="book11"> <label for="book11">The Berenstain Bears and the Truth</label></li>
+        <li class="book-item"><input type="checkbox" id="book12"> <label for="book12">The Berenstain Bears Visit the Dentist</label></li>
+        <li class="book-item"><input type="checkbox" id="book13"> <label for="book13">The Berenstain Bears and the Trouble with Money</label></li>
+        <li class="book-item"><input type="checkbox" id="book14"> <label for="book14">The Berenstain Bears and the Slumber Party</label></li>
+        <li class="book-item"><input type="checkbox" id="book15"> <label for="book15">The Berenstain Bears Learn About Strangers</label></li>
+        <li class="book-item"><input type="checkbox" id="book16"> <label for="book16">The Berenstain Bears and the Trouble with Grownups</label></li>
+        <li class="book-item"><input type="checkbox" id="book17"> <label for="book17">The Berenstain Bears and the Double Dare</label></li>
+        <li class="book-item"><input type="checkbox" id="book18"> <label for="book18">The Berenstain Bears and the Week at Grandma's</label></li>
+        <li class="book-item"><input type="checkbox" id="book19"> <label for="book19">The Berenstain Bears and Too Much Vacation</label></li>
+        <li class="book-item"><input type="checkbox" id="book20"> <label for="book20">The Berenstain Bears Go to Camp</label></li>
+        <li class="book-item"><input type="checkbox" id="book21"> <label for="book21">The Berenstain Bears Get in a Fight</label></li>
+        <li class="book-item"><input type="checkbox" id="book22"> <label for="book22">The Berenstain Bears and the Trouble with Pets</label></li>
+        <li class="book-item"><input type="checkbox" id="book23"> <label for="book23">The Berenstain Bears' Trouble at School</label></li>
+        <li class="book-item"><input type="checkbox" id="book24"> <label for="book24">The Berenstain Bears and the Truth</label></li>
+        <li class="book-item"><input type="checkbox" id="book25"> <label for="book25">The Berenstain Bears Forget Their Manners</label></li>
+        <li class="book-item"><input type="checkbox" id="book26"> <label for="book26">The Berenstain Bears and Too Much Birthday</label></li>
+        <li class="book-item"><input type="checkbox" id="book27"> <label for="book27">The Berenstain Bears and the Bad Dream</label></li>
+        <li class="book-item"><input type="checkbox" id="book28"> <label for="book28">The Berenstain Bears and the Green-Eyed Monster</label></li>
+        <li class="book-item"><input type="checkbox" id="book29"> <label for="book29">The Berenstain Bears and the Bully</label></li>
+        <li class="book-item"><input type="checkbox" id="book30"> <label for="book30">The Berenstain Bears and the Big Road Race</label></li>
+        <li class="book-item"><input type="checkbox" id="book31"> <label for="book31">The Berenstain Bears and the Ghost of the Forest</label></li>
+        <li class="book-item"><input type="checkbox" id="book32"> <label for="book32">The Berenstain Bears and the Missing Dinosaur Bone</label></li>
+        <li class="book-item"><input type="checkbox" id="book33"> <label for="book33">The Berenstain Bears and the Big Honey Hunt</label></li>
+        <li class="book-item"><input type="checkbox" id="book34"> <label for="book34">The Berenstain Bears and the Big Spelling Bee</label></li>
+        <li class="book-item"><input type="checkbox" id="book35"> <label for="book35">The Berenstain Bears and Too Much Pressure</label></li>
+        <li class="book-item"><input type="checkbox" id="book36"> <label for="book36">The Berenstain Bears and the In-Crowd</label></li>
+        <li class="book-item"><input type="checkbox" id="book37"> <label for="book37">The Berenstain Bears and the Forgiving Tree</label></li>
+        <li class="book-item"><input type="checkbox" id="book38"> <label for="book38">The Berenstain Bears and the Prize Pumpkin</label></li>
+        <li class="book-item"><input type="checkbox" id="book39"> <label for="book39">The Berenstain Bears and Too Much Junk Food</label></li>
+        <li class="book-item"><input type="checkbox" id="book40"> <label for="book40">The Berenstain Bears and the Big Road Race</label></li>
+        <li class="book-item"><input type="checkbox" id="book41"> <label for="book41">The Berenstain Bears and the Red-Handed Thief</label></li>
+        <li class="book-item"><input type="checkbox" id="book42"> <label for="book42">The Berenstain Bears and the Homework Hassle</label></li>
+        <li class="book-item"><input type="checkbox" id="book43"> <label for="book43">The Berenstain Bears and the Bad Influence</label></li>
+        <li class="book-item"><input type="checkbox" id="book44"> <label for="book44">The Berenstain Bears and the Showdown at Chainsaw Gap</label></li>
+        <li class="book-item"><input type="checkbox" id="book45"> <label for="book45">The Berenstain Bears and the Galloping Ghost</label></li>
+        <li class="book-item"><input type="checkbox" id="book46"> <label for="book46">The Berenstain Bears and the Haunted House</label></li>
+        <li class="book-item"><input type="checkbox" id="book47"> <label for="book47">The Berenstain Bears and the Ice Monster</label></li>
+        <li class="book-item"><input type="checkbox" id="book48"> <label for="book48">The Berenstain Bears and the Dress Code</label></li>
+        <li class="book-item"><input type="checkbox" id="book49"> <label for="book49">The Berenstain Bears and the Giddy Grandma</label></li>
+        <li class="book-item"><input type="checkbox" id="book50"> <label for="book50">The Berenstain Bears and the Trouble with Things</label></li>
+        <li class="book-item"><input type="checkbox" id="book51"> <label for="book51">The Berenstain Bears and the Trouble with Credit Cards</label></li>
+        <li class="book-item"><input type="checkbox" id="book52"> <label for="book52">The Berenstain Bears and the Trouble with Gifts</label></li>
+        <li class="book-item"><input type="checkbox" id="book53"> <label for="book53">The Berenstain Bears and the Trouble with Cookies</label></li>
+        <li class="book-item"><input type="checkbox" id="book54"> <label for="book54">The Berenstain Bears and the Big Blooper</label></li>
+        <li class="book-item"><input type="checkbox" id="book55"> <label for="book55">The Berenstain Bears and the Giant Bat Cave</label></li>
+        <li class="book-item"><input type="checkbox" id="book56"> <label for="book56">The Berenstain Bears and the Nutcracker</label></li>
+        <li class="book-item"><input type="checkbox" id="book57"> <label for="book57">The Berenstain Bears and the Trouble with Secrets</label></li>
+        <li class="book-item"><input type="checkbox" id="book58"> <label for="book58">The Berenstain Bears and the Trouble with Grownups</label></li>
+        <li class="book-item"><input type="checkbox" id="book59"> <label for="book59">The Berenstain Bears and the Trouble with Friends</label></li>
+        <li class="book-item"><input type="checkbox" id="book60"> <label for="book60">The Berenstain Bears and the Trouble with Valentine's Day</label></li>
+        <li class="book-item"><input type="checkbox" id="book61"> <label for="book61">The Berenstain Bears and the Trouble with Christmas</label></li>
+        <li class="book-item"><input type="checkbox" id="book62"> <label for="book62">The Berenstain Bears and the Trouble with Grownups</label></li>
+        <li class="book-item"><input type="checkbox" id="book63"> <label for="book63">The Berenstain Bears and the Trouble with the Wheel</label></li>
+        <li class="book-item"><input type="checkbox" id="book64"> <label for="book64">The Berenstain Bears and the Trouble with Baseball</label></li>
+        <li class="book-item"><input type="checkbox" id="book65"> <label for="book65">The Berenstain Bears and the Trouble with Working Parents</label></li>
+        <li class="book-item"><input type="checkbox" id="book66"> <label for="book66">The Berenstain Bears and the Trouble with Secrets</label></li>
+        <li class="book-item"><input type="checkbox" id="book67"> <label for="book67">The Berenstain Bears and the Trouble with Sleepovers</label></li>
+        <li class="book-item"><input type="checkbox" id="book68"> <label for="book68">The Berenstain Bears and the Trouble with Gifts</label></li>
+        <li class="book-item"><input type="checkbox" id="book69"> <label for="book69">The Berenstain Bears and the Trouble with Cats</label></li>
+        <li class="book-item"><input type="checkbox" id="book70"> <label for="book70">The Berenstain Bears and the Trouble with Germs</label></li>
+        <li class="book-item"><input type="checkbox" id="book71"> <label for="book71">The Berenstain Bears and the Trouble with Greed</label></li>
+        <li class="book-item"><input type="checkbox" id="book72"> <label for="book72">The Berenstain Bears and the Trouble with Gossip</label></li>
+        <li class="book-item"><input type="checkbox" id="book73"> <label for="book73">The Berenstain Bears and the Trouble with Jealousy</label></li>
+        <li class="book-item"><input type="checkbox" id="book74"> <label for="book74">The Berenstain Bears and the Trouble with Lying</label></li>
+        <li class="book-item"><input type="checkbox" id="book75"> <label for="book75">The Berenstain Bears and the Trouble with Money</label></li>
+        <li class="book-item"><input type="checkbox" id="book76"> <label for="book76">The Berenstain Bears and the Trouble with Pets</label></li>
+        <li class="book-item"><input type="checkbox" id="book77"> <label for="book77">The Berenstain Bears and the Trouble with Pride</label></li>
+        <li class="book-item"><input type="checkbox" id="book78"> <label for="book78">The Berenstain Bears and the Trouble with School</label></li>
+        <li class="book-item"><input type="checkbox" id="book79"> <label for="book79">The Berenstain Bears and the Trouble with Sportsmanship</label></li>
+        <li class="book-item"><input type="checkbox" id="book80"> <label for="book80">The Berenstain Bears and the Trouble with Stress</label></li>
+        <li class="book-item"><input type="checkbox" id="book81"> <label for="book81">The Berenstain Bears and the Trouble with Sweets</label></li>
+        <li class="book-item"><input type="checkbox" id="book82"> <label for="book82">The Berenstain Bears and the Trouble with Teasing</label></li>
+        <li class="book-item"><input type="checkbox" id="book83"> <label for="book83">The Berenstain Bears and the Trouble with Thieves</label></li>
+        <li class="book-item"><input type="checkbox" id="book84"> <label for="book84">The Berenstain Bears and the Trouble with TV</label></li>
+        <li class="book-item"><input type="checkbox" id="book85"> <label for="book85">The Berenstain Bears and the Trouble with Trouble</label></li>
+        <li class="book-item"><input type="checkbox" id="book86"> <label for="book86">The Berenstain Bears and the Trouble with Vacation</label></li>
+        <li class="book-item"><input type="checkbox" id="book87"> <label for="book87">The Berenstain Bears and the Trouble with Video Games</label></li>
+        <li class="book-item"><input type="checkbox" id="book88"> <label for="book88">The Berenstain Bears and the Trouble with Visitors</label></li>
+        <li class="book-item"><input type="checkbox" id="book89"> <label for="book89">The Berenstain Bears and the Trouble with Work</label></li>
+        <li class="book-item"><input type="checkbox" id="book90"> <label for="book90">The Berenstain Bears and the Trouble with Yucky Wucky</label></li>
+        <li class="book-item"><input type="checkbox" id="book91"> <label for="book91">The Berenstain Bears and the Trouble with Your Birthday</label></li>
+        <li class="book-item"><input type="checkbox" id="book92"> <label for="book92">The Berenstain Bears and the Trouble with Your Family</label></li>
+    </ul>
+
+    <script>
+document.getElementById('searchBar').addEventListener('input', function() {
+    let filter = this.value.toLowerCase();
+    let books = document.getElementsByClassName('book-item');
+
+    for (let i = 0; i < books.length; i++) {
+        let label = books[i].getElementsByTagName('label')[0];
+        if (label.innerHTML.toLowerCase().indexOf(filter) > -1) {
+            books[i].style.display = '';
+        } else {
+            books[i].style.display = 'none';
+        }
+    }
+});
+
+    </script>
+</body>
+</html>
