@@ -30,7 +30,7 @@
                 font-weight: bold;
 }
             #starsContainer {
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -73,17 +73,22 @@
             .book-list {
                 list-style-type: none;
                 padding: 0;
-                max-width: 600px;
+                max-width: 1200px; /* Adjusted to fit two columns */
                 margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
             }
+
             .book-item {
-                margin: 10px 0;
+                margin: 10px;
                 padding: 10px;
                 background-color: #333;
                 border: 1px solid #555;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
+                width: calc(50% - 20px); /* Adjusted to fit two columns */
+                box-sizing: border-box;
             }
             .book-item input {
                 margin-right: 10px;
@@ -108,21 +113,25 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
+                width: 100%; /* Ensure the container takes full width */
             }
 
             .photo-scroll {
                 display: flex;
                 overflow-x: auto;
                 scroll-behavior: smooth;
-                width: 80%;
+                width: 80%; /* Adjust width as needed */
                 padding: 10px;
+                margin: 0 auto; /* Center the photo scroll */
             }
 
             .photo-scroll img {
                 margin: 10px;
                 border: 2px solid #555;
                 border-radius: 5px;
-                max-width: 200px;
+                max-width: none; /* Remove the max-width constraint */
+                width: auto; /* Ensure the width is set to auto */
+                height: auto; /* Ensure the height is set to auto */
                 flex-shrink: 0;
             }
 
@@ -161,7 +170,6 @@
         <h1>Welcome to the Pierce Family Webpage</h1>
     </header>
     <h1>Berenstain Bears Book List</h1>
-    <input type="text" id="searchBar" placeholder="Search for a book...">
 
     <div id="starsContainer"></div>
     <div class="sparkle"></div>
@@ -348,15 +356,6 @@
      <script src="stars.js"></script>
     <script>
 <script>
-document.getElementById('searchBar').addEventListener('input', function() {
-    const filter = this.value.toLowerCase();
-    const books = document.querySelectorAll('.book-item');
-
-    books.forEach(book => {
-        const label = book.querySelector('label').innerText.toLowerCase();
-        book.style.display = label.includes(filter) ? '' : 'none';
-    });
-});
 
 function scrollLeft() {
     document.querySelector('.photo-scroll').scrollBy({ left: -200, behavior: 'smooth' });
