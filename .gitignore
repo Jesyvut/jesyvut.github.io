@@ -1,5 +1,12 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
 
-/.vs/jesyvut.github.io/FileContentIndex
+# Ignore build results
+bin/
+obj/
+
+# Ignore temporary files
+*.log
+*.tmp
